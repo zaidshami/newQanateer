@@ -10,12 +10,14 @@ Future<void> main() async {
   runApp(App(mainModel: _uuu,languageCode:"ar" ,));
 
 }
+
 MainModel get _uuu=>MainModel(appConstants: _appconsts,themeColors:_themeColors );
+String _log="appassets/images/lastsplash.png";
 AppConstants get _appconsts=>AppConstants(
 
 
     serverUrl: 'https://qanateer.vvx.mqj.mybluehost.me',appPackege:"qanateer"
-    ,appLogo:"" , isLocalOrders:true, boaredImg: ["","",""], appName: 'قناطير' );
+    ,appLogo:_log , isLocalOrders:true, boaredImg: [_log,_log,_log], appName: 'قناطير' );
 
 ThemeColors get _themeColors=>ThemeColors(
     praimaryColor:HexColor("#375C4A") ,secandoryColor:HexColor("#53504B") ,
